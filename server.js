@@ -1,5 +1,5 @@
 const express = require('express');
-const recipeRouter = require('./recipes/recipeRouter');
+const recipeRouter = require('./recipies/recipeRouter');
 
 const server = express();
 

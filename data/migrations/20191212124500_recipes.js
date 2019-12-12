@@ -3,12 +3,12 @@ exports.up = function(knex) {
     return knex.schema
       .createTable('recipes', tbl => {
           tbl.increments();
-          tbl.string('name', 255).notNullable();
+          tbl.string('rname', 255).notNullable();
       })
 
       .createTable('ingredients', tbl => {
           tbl.increments();
-          tbl.string('name', 255).notNullable();
+          tbl.string('iname', 255).notNullable();
       })
 
       .createTable('steps', tbl => {
